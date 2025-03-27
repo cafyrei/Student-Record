@@ -6,13 +6,13 @@ class Window(customtkinter.CTk):
         super().__init__()
         # Root main elements
         self.title("Student Registration System")
-        self.geometry("1000x600")
+        self.geometry("600x600")
         self.resizable(False, False)
         
         
         # Initialize Componets
         self.loginPage = Login(self)
-        self.loginPage.pack(pady=20)
+        self.loginPage.pack(pady=20, expand=True)
         
         
     
